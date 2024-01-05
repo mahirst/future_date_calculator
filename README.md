@@ -23,13 +23,14 @@ This simple Python script calculates the date that is a specified number of days
 ```python
 from datetime import datetime, timedelta
 
-# Current date
+# current date
 current_date = datetime.now()
 
-# Calculate the date 33 days from now
+# calculate the date 33 days from now
+  # change 33 to whichever target date you're interested in
 future_date = current_date + timedelta(days=33)
 
-# Format the date to display only the day
+# format the date to display only the day
 future_day = future_date.strftime("%A, %B %d, %Y")
 print(future_day)
 ```
